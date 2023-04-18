@@ -1,12 +1,12 @@
-function changeImageMerah(){
+function petaMerah(){
     var img = document.getElementById('image');
-    img.src = "img/PETA KALSEL Merah.png";
+    img.src = "../../img/PETA KALSEL Merah.png";
 }
-function changeImageHijau(){
+function petaHijau(){
     var img = document.getElementById('image');
-    img.src = "img/PETA KALSEL Hijau.png";
+    img.src = "../../img/PETA KALSEL Hijau.png";
 }
-function changeImageBiru(){
+function petaBiru(){
     var img = document.getElementById('image');
-    img.src = "img/PETA KALSEL Biru.png";
+    img.src = "../../img/PETA KALSEL Biru.png";
 }

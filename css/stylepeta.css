@@ -94,12 +94,34 @@ nav {
   }
 
 section {
-    /* display: grid; */
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
     padding: 0 5px;
     text-decoration: none;
+}
+
+.left {
+    
+}
+
+.left ul li {
+    list-style-type: none;
+    margin: 1em;
+}
+
+.left ul li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    
+}
+
+.left ul li a:hover {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(16, 52, 196);
 }
 
 .logoSDGsKALSEL {
@@ -112,36 +134,29 @@ section {
 }
 
 .image {
-    width: 90%;
-    transform: translateX(10%);
+    width: 100%;
+    transform: translateX(-5%);
+    transition: all 1s;
+    display: block;
+    position: relative;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
+.data {
+    position: absolute;
+    bottom: 80px;
+    left: 160px;
+}
 
-  table th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-    text-transform: uppercase;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+.data p {
+    color: rgb(0, 202, 202);
+}
 
-  table tr td a {
-    text-decoration: none;
-  }
+.titlepeta {
+    font-size: 1.5em;
+    margin-bottom: 4em;
+    text-align: justify;
+}
+
 
 footer {
     padding: 1.2em;
