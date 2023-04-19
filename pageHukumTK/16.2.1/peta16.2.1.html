@@ -14,7 +14,8 @@
 
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="../../img/logoBAPPEDA.png" alt="logoBAPPEDA" class="logoBAPPEDA"></a>
+                <a href="../../index.html"><img src="../../img/logoBAPPEDA.png" alt="logoBAPPEDA"
+                        class="logoBAPPEDA"></a>
             </div>
 
             <div class="button">
@@ -69,16 +70,16 @@
                 </h3>
                 <ul>
                     <li>
-                        <a href="#" onclick="petaMerah()">Tahun 2018</a>
+                        <a href="#" onclick="petaMerah(); targetCapaian2018()">Tahun 2018</a>
                     </li>
                     <li>
-                        <a href="#" onclick="petaHijau()">Tahun 2019</a>
+                        <a href="#" onclick="petaHijau(); targetCapaian2019()">Tahun 2019</a>
                     </li>
                     <li>
-                        <a href="#" onclick="petaHijau()">Tahun 2020</a>
+                        <a href="#" onclick="petaHijau(); targetCapaian2020()">Tahun 2020</a>
                     </li>
                     <li>
-                        <a href="#" onclick="petaBiru()">Tahun 2021</a>
+                        <a href="#" onclick="petaBiru(); targetCapaian2021()">Tahun 2021</a>
                     </li>
                     <li>
                         <a href="../hukumtk16.html" class="backArrow" style="font-size: 3em;">↶</a>
@@ -86,10 +87,14 @@
                 </ul>
             </div>
             <div class="right">
-                <img src="../../img/PETA KALSEL default.png" alt="peta kalsel" id="image" class="image">
-                <div class="data">
-                    <p>67%</p>
-                    <p>70%</p>
+                <div class="wrapper">
+                    <div class="image">
+                        <img src="../../img/PETA KALSEL default.png" alt="peta kalsel" id="peta">
+                        <div class="content">
+                            <p id="target"></p>
+                            <p id="capaian"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -99,7 +104,42 @@
         </footer>
     </main>
 
-    <script src="../../js/script.js"></script>
+    <!-- <script src="../../js/script.js"></script> -->
+
+    <script>
+        function petaMerah() {
+            let img = document.getElementById('peta');
+            img.src = "../../img/PETA KALSEL Merah.png";
+        }
+        function petaHijau() {
+            let img = document.getElementById('peta');
+            img.src = "../../img/PETA KALSEL Hijau.png";
+        }
+        function petaBiru() {
+            let img = document.getElementById('peta');
+            img.src = "../../img/PETA KALSEL Biru.png";
+        }
+
+        function targetCapaian2018() {
+            let target = document.getElementById('target').innerText = "TARGET 60%";
+            let capaian = document.getElementById('capaian').innerText = "CAPAIAN 59%";
+        }
+
+        function targetCapaian2019() {
+            let target = document.getElementById('target').innerText = "TARGET 70%";
+            let capaian = document.getElementById('capaian').innerText = "CAPAIAN 70%";
+        }
+
+        function targetCapaian2020() {
+            let target = document.getElementById('target').innerText = "TARGET 75%";
+            let capaian = document.getElementById('capaian').innerText = "CAPAIAN 75%";
+        }
+
+        function targetCapaian2021() {
+            let target = document.getElementById('target').innerText = "TARGET 80%";
+            let capaian = document.getElementById('capaian').innerText = "CAPAIAN 85%";
+        }
+    </script>
 </body>
 
 </html>

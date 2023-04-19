@@ -133,22 +133,38 @@ section {
     text-decoration: none;
 }
 
-.image {
+.wrapper {
     width: 100%;
-    transform: translateX(-5%);
-    transition: all 1s;
-    display: block;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 600px;
     position: relative;
 }
 
-.data {
-    position: absolute;
-    bottom: 80px;
-    left: 160px;
+img{
+    width: 100%;
+    display: block;
+    
 }
 
-.data p {
-    color: rgb(0, 202, 202);
+.content {
+    width: 20%;
+    height: 20%;
+    top: 350px;
+    left: 250px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.content p {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
 }
 
 .titlepeta {
@@ -159,5 +175,5 @@ section {
 
 
 footer {
-    padding: 1.2em;
+    padding-top: .1em;
 }
