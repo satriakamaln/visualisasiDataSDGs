@@ -93,6 +93,14 @@ nav {
     display: block;
   }
 
+  .dropdown-content .selectGoal{
+    background-color: rgb(180, 230, 255);
+  }
+  
+  .dropdown-content .selectGoal:hover {
+    background-color: rgb(180, 230, 255);
+  }
+
 section {
     /* display: grid; */
     grid-template-columns: repeat(2, 1fr);
@@ -141,7 +149,15 @@ table {
 
   table tr td a {
     text-decoration: none;
+    color: black;
   }
+
+  table tr td a:active {
+    text-decoration: none;
+    color: rgb(2, 126, 227);
+  }
+
+
 
 footer {
     padding: 1.2em;
