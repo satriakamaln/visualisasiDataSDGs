@@ -52,7 +52,7 @@
                         </div> -->
                     </div>
                     <div class="dropdown">
-                        <button class="dropbtn" disabled>HUKUM Dan TATA KELOLA</button>
+                        <button class="dropbtn" disabled>HUKUM DAN TATA KELOLA</button>
                         <!-- <div class="dropdown-content">
                             <a href="../../pageHukumTK/hukumtk16.html">16. Perdamaian, Keadilan dan Kelembagaan Yang
                                 Tangguh</a>
@@ -70,21 +70,27 @@
                 </h3>
                 <ul>
                     <li>
-                        <a href="#" onclick="petaMerah(); targetCapaian2018()">Tahun 2018</a>
+                        <a href="#" onclick="targetCapaian2018()">Tahun 2018</a>
                     </li>
                     <li>
-                        <a href="#" onclick="petaHijau(); targetCapaian2019()">Tahun 2019</a>
+                        <a href="#" onclick="targetCapaian2019()">Tahun 2019</a>
                     </li>
                     <li>
-                        <a href="#" onclick="petaHijau(); targetCapaian2020()">Tahun 2020</a>
+                        <a href="#" onclick="targetCapaian2020()">Tahun 2020</a>
                     </li>
                     <li>
-                        <a href="#" onclick="petaBiru(); targetCapaian2021()">Tahun 2021</a>
+                        <a href="#" onclick="targetCapaian2021()">Tahun 2021</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="targetCapaian2022()">Tahun 2022</a>
                     </li>
                     <li>
                         <a href="../hukumtk16.html" class="backArrow" style="font-size: 3em;">↶</a>
                     </li>
                 </ul>
+                <div class="testing">
+
+                </div>
             </div>
             <div class="right">
                 <div class="wrapper">
@@ -104,6 +110,8 @@
         </footer>
     </main>
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script> -->
+
     <!-- <script src="../../js/script.js"></script> -->
 
     <script>
@@ -121,24 +129,134 @@
         }
 
         function targetCapaian2018() {
-            let target = document.getElementById('target').innerText = "TARGET 60%";
-            let capaian = document.getElementById('capaian').innerText = "CAPAIAN 59%";
+            let t = 50;
+            let c = 55;
+            let satuan = "%";
+
+            if (c > t) {
+                petaBiru()
+            } else if (c == t) {
+                petaHijau()
+            } else {
+                petaMerah()
+            }
+
+            let target = document.getElementById('target').innerText = "TARGET " + t + satuan;
+            let capaian = document.getElementById('capaian').innerText = "CAPAIAN " + c + satuan;
         }
 
         function targetCapaian2019() {
-            let target = document.getElementById('target').innerText = "TARGET 70%";
-            let capaian = document.getElementById('capaian').innerText = "CAPAIAN 70%";
+            let t = 60;
+            let c = 55;
+            let satuan = "%";
+
+            if (c > t) {
+                petaBiru()
+            } else if (c == t) {
+                petaHijau()
+            } else {
+                petaMerah()
+            }
+
+            let target = document.getElementById('target').innerText = "TARGET " + t + satuan;
+            let capaian = document.getElementById('capaian').innerText = "CAPAIAN " + c + satuan;
         }
 
         function targetCapaian2020() {
-            let target = document.getElementById('target').innerText = "TARGET 75%";
-            let capaian = document.getElementById('capaian').innerText = "CAPAIAN 75%";
+            let t = 60;
+            let c = 60;
+            let satuan = "%";
+
+            if (c > t) {
+                petaBiru()
+            } else if (c == t) {
+                petaHijau()
+            } else {
+                petaMerah()
+            }
+
+            let target = document.getElementById('target').innerText = "TARGET " + t + satuan;
+            let capaian = document.getElementById('capaian').innerText = "CAPAIAN " + c + satuan;
         }
 
         function targetCapaian2021() {
-            let target = document.getElementById('target').innerText = "TARGET 80%";
-            let capaian = document.getElementById('capaian').innerText = "CAPAIAN 85%";
+            let t = 70;
+            let c = 70;
+            let satuan = "%";
+
+            if (c > t) {
+                petaBiru()
+            } else if (c == t) {
+                petaHijau()
+            } else {
+                petaMerah()
+            }
+
+            let target = document.getElementById('target').innerText = "TARGET " + t + satuan;
+            let capaian = document.getElementById('capaian').innerText = "CAPAIAN " + c + satuan;
         }
+
+        function targetCapaian2022() {
+            let t = 80;
+            let c = 80;
+            let satuan = "%";
+
+            if (c > t) {
+                petaBiru()
+            } else if (c == t) {
+                petaHijau()
+            } else {
+                petaMerah()
+            }
+
+            let target = document.getElementById('target').innerText = "TARGET " + t + satuan;
+            let capaian = document.getElementById('capaian').innerText = "CAPAIAN " + c + satuan;
+        }
+
+        // function targetCapaian2018() { //hijau
+        //     let target = document.getElementById('target').innerText = "TARGET 46,2%";
+        //     let capaian = document.getElementById('capaian').innerText = "CAPAIAN 46,2%";
+        // }
+
+        // function targetCapaian2019() { //biru
+        //     let target = document.getElementById('target').innerText = "TARGET 53,85%";
+        //     let capaian = document.getElementById('capaian').innerText = "CAPAIAN 70%";
+        // }
+
+        // function targetCapaian2020() { //hijau
+        //     let target = document.getElementById('target').innerText = "TARGET 61,54%";
+        //     let capaian = document.getElementById('capaian').innerText = "CAPAIAN 61,54%";
+        // }
+
+        // function targetCapaian2021() { //merah
+        //     let target = document.getElementById('target').innerText = "TARGET 69,23%";
+        //     let capaian = document.getElementById('capaian').innerText = "CAPAIAN -%";
+        // }
+
+        // function targetCapaian2022() { //merah
+        //     let target = document.getElementById('target').innerText = "TARGET -%";
+        //     let capaian = document.getElementById('capaian').innerText = "CAPAIAN 48%";
+        // }
+
+        // function fetchTest(params) {
+        //     axios.get('https://berita-indo-api.vercel.app/')
+        //         .then(function (response) {
+        //             // handle success
+        //             console.log(response.data);
+        //             // document.getElementsByClassName('testing')[0].innerText = JSON.stringify(response.data)
+        //         })
+        //         .catch(function (error) {
+        //             // handle error
+        //             console.log(error);
+        //         })
+        //         .finally(function () {
+        //             // always executed
+        //         });
+        // }
+        // fetchTest()
+
+
+
     </script>
 </body>
 
